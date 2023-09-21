@@ -1,5 +1,5 @@
 function getDigits(word) {
-    const nums = word.match(/\d/g);
+    const nums = word.match(/[0-9]/g);
     
     console.log(`Length: ${nums ? nums.length : 0}  digits: ${ nums.join(",")}`);
   }
