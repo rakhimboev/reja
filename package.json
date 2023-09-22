@@ -4,7 +4,7 @@
   "description": "",
   "main": "b_task.js",
   "scripts": {
-    "start": "nodemon c-task.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/rakhimboev/reja#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "inquirer": "^8.0.0",
     "moment": "^2.29.4",
     "nodemon": "^3.0.1",
