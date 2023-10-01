@@ -3,5 +3,20 @@
     "profession": "Software Engineer",
     "age": 24,
     "residence": "USA",
-    "address": "Brooklyn, New York"
+    "freelance": "Available",
+    "address": "Brooklyn, New York",
+    "languages": ["Uzbek","English", "Korean"],
+    "skills": ["HTML","CSS","JS","NodeJs", "ReactJS"],
+    "extra_skills": ["CSS","JS","Styling", "GIT"],
+    "work_place": "IT Company",
+    "service_desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, distinctio?",
+    "about_me": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, distinctio?",
+    "city": "Brooklyn",
+    "title": ["Flower", "Garden"],
+    "flower_desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, distinctio?",
+    "flower_name": ["Tulip", "Kaktus", "Dolor"],
+    "flower_price": ["$100", "$150", "$200"],
+    "famous_words": ["Namangan gullar shahri"],
+    "famous_name": ["Namangan"]
+
 }
