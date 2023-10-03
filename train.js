@@ -1,10 +1,27 @@
-// E-task
-const reversing = (str) => {
-    return str.split('').reverse().join('');
+// F-task
+function findDoublers(str) {
+    for (let i = 0; i < str.length; i++) {
+        const letter = str[i];
+        if (str.lastIndexOf(letter) !== i) {
+            return true; 
+        }
+    }
+    return false;   
 }
 
-const test = reversing('hello')
-console.log(test)
+const str1 = "hello"; 
+const str2 = "world"; 
+console.log(findDoublers(str1));
+console.log(findDoublers(str2));
+
+
+// // E-task
+// const reversing = (str) => {
+//     return str.split('').reverse().join('');
+// }
+
+// const test = reversing('hello')
+// console.log(test)
 
 
 
