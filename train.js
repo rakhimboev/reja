@@ -1,18 +1,34 @@
-// F-task
-function findDoublers(str) {
-    for (let i = 0; i < str.length; i++) {
-        const letter = str[i];
-        if (str.lastIndexOf(letter) !== i) {
-            return true; 
-        }
+// I - task
+const getCompute = (str) => {
+    if (str.length < 2) {
+        return str.split('');
     }
-    return false;   
+
+    const first = str.charAt(0);
+    const rest = str.slice(1);
+    return (rest + first).split('');
 }
 
-const str1 = "hello"; 
-const str2 = "world"; 
-console.log(findDoublers(str1));
-console.log(findDoublers(str2));
+
+console.log(getCompute('hello'));
+console.log(getCompute('world'));
+
+
+// // F-task
+// function findDoublers(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         const letter = str[i];
+//         if (str.lastIndexOf(letter) !== i) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+// const str1 = "hello";
+// const str2 = "world";
+// console.log(findDoublers(str1));
+// console.log(findDoublers(str2));
 
 
 // // E-task
