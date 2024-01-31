@@ -20,5 +20,8 @@
   "devDependencies": {
     "nodemon": "^3.0.3"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }
