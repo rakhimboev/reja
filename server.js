@@ -41,6 +41,6 @@ app.get('/', (req, res) => {
 const server = http.createServer(app)
 let PORT = 3000
 server.listen(PORT, () => {
-    console.log(`The server is listening at ${PORT}`)
+    console.log(`The server is http://localhost:${PORT}`)
 })
 
