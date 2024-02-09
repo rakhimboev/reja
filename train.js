@@ -41,6 +41,5 @@ const run = async () => {
     console.log(javob)
     javob = await advice(55)
     console.log(javob)
-
 }
 run()
