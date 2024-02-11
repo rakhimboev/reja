@@ -24,6 +24,7 @@ console.log(result);
 
 
 
+
 // console.log('My advices: ')
 // const list = [
 //     `Maktabda yaxshi o'qing`,
