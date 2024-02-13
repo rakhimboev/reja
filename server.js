@@ -34,7 +34,7 @@ app.get('/author', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.render('harid')
+    res.render('reja')
 })
 
 
