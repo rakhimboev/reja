@@ -1,22 +1,36 @@
-// A-task
+// // A-task
 
-const countLetter = (letter, word) => {
-    let list = word.split('');
+// const countLetter = (letter, word) => {
+//     let list = word.split('');
     
-    let count = 0;
-    for (let i = 0; i < list.length; i++) {
-        if (list[i] === letter) {
-            count++;
-        }
-    }
-    return count;
-}
+//     let count = 0;
+//     for (let i = 0; i < list.length; i++) {
+//         if (list[i] === letter) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-let result = countLetter("e", "engineer");
-console.log(result);
+// let result = countLetter("e", "engineer");
+// console.log(result);
 
-result = countLetter("t", "letterett");
-console.log(result);
+// result = countLetter("t", "letterett");
+// console.log(result);
+
+// // B- task
+// function countDigits(word) {
+//     let count = word.match(/\d/g);
+
+//     return count.length
+// }
+
+// let result = countDigits("ad2a54y79wet0sfgb9");
+// console.log(result);
+// console.log(countDigits('taqisrni raqami: 777-1777'))
+
+// C-task
+
 
 
 // yutq12HIJRxO3UZP
