@@ -22,19 +22,64 @@ const itemTemplate = (item) => {
   </li>`;
 };
 
-let createField = document.getElementById('create-field');
+let createField = document.getElementById("create-field");
 
-document.getElementById('create-form').addEventListener('submit', (e)=> {
+document.getElementById("create-form").addEventListener("submit", (e) => {
   e.preventDefault();
   axios
-    .post('/create-item', {reja: createField.value})
-    .then((response)=> {
-      document.getElementById('item-list')
-      .insertAdjacentHTML('beforeend', itemTemplate(response.data))
-      createField.value = ''
+    .post("/create-item", { reja: createField.value })
+    .then((response) => {
+      document
+        .getElementById("item-list")
+        .insertAdjacentHTML("beforeend", itemTemplate(response.data));
+      createField.value = "";
       createField.focus();
     })
     .catch((err) => {
-      console.log('please, try again')
-    })
+      console.log("please, try again");
+    });
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("Are you sure you want to delete?"))
+      axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log("please try again");
+        });
+  }
+
+  if (e.target.classList.contains("edit-me")) {
+    let userInput = prompt(
+      "Edit now",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+    );
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+          ).innerHTML = userInput;
+        })
+        .catch((error) => {
+          console.log("please try again");
+        });
+    }
+  }
+});
+
+document.getElementById('clean-all').addEventListener("click", () => {
+  axios.post('/delete-all', {delete_all: true}).then((response) => {
+    alert(response.data.state)
+    document.location.reload();
+  })
 })
