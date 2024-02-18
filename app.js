@@ -6,15 +6,6 @@ const mongodb = require("mongodb");
 // MongoDB callling
 const db = require("./server").db();
 
-let user;
-fs.readFile("database/user.json", "utf8", (err, data) => {
-  if (err) {
-    console.log("error: ", err);
-  } else {
-    user = JSON.parse(data);
-  }
-});
-
 // step 1: Starting code
 app.use(express.static("public"));
 app.use(express.json());
