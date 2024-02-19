@@ -98,3 +98,13 @@
 // // run()
 // // run()
 // >>>>>>> 911f464bad98900a41d4a7421462759a832dff13
+
+
+// e task
+const getReverse = (word) => {
+    let characters = word.split('').reverse().join('');
+    console.log(characters);
+}
+
+getReverse("hello")
+getReverse("olleh")
