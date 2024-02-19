@@ -2,7 +2,7 @@
 
 // // const countLetter = (letter, word) => {
 // //     let list = word.split('');
-    
+
 // //     let count = 0;
 // //     for (let i = 0; i < list.length; i++) {
 // //         if (list[i] === letter) {
@@ -29,23 +29,32 @@
 // // console.log(result);
 // // console.log(countDigits('taqisrni raqami: 777-1777'))
 
-// // C-task
+// // D-task
 
+// function checkContent(word1, word2) {
+//     let list1 = word1.split('').sort().join('');
+//     let list2 = word2.split('').sort().join('');
 
-
-// <<<<<<< HEAD
-// const run = async () => { 
-//     let javob = await advice(22)
-//     console.log(javob)
-//     javob = await advice(32)
-//     console.log(javob)
-//     javob = await advice(55)
-//     console.log(javob)
+//     console.log(list1 === list2);
 // }
-// run()
-// =======
-// // yutq12HIJRxO3UZP
+
+// checkContent("mitgroup", "gmtiprou");
+// checkContent('true', 'rute')
+
+
+// // e task
+// const getReverse = (word) => {
+//     let characters = word.split('').reverse().join('');
+//     console.log(characters);
+// }
+
+// getReverse("hello")
+// getReverse("olleh")
+
 // // Unuxo7RTmDmZZCmQ
+
+
+
 
 
 
@@ -83,10 +92,9 @@
 // // //         console.log('error: ' + err)
 // // //     })
 
-
 // // // console.log('passed here 1')
 
-// // const run = async () => { 
+// // const run = async () => {
 // //     let javob = await advice(22)
 // //     console.log(javob)
 // //     javob = await advice(32)
@@ -98,13 +106,3 @@
 // // run()
 // // run()
 // >>>>>>> 911f464bad98900a41d4a7421462759a832dff13
-
-
-// e task
-const getReverse = (word) => {
-    let characters = word.split('').reverse().join('');
-    console.log(characters);
-}
-
-getReverse("hello")
-getReverse("olleh")
