@@ -54,6 +54,26 @@
 // // Unuxo7RTmDmZZCmQ
 
 
+// f- taskchik
+function double(word) {
+    for (var i = 0; i < word.length; i++) {
+        for (var j = i + 1; j < word.length; j++) {
+            if (word[i] === word[j]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
+let result = double("hello");
+console.log(result); 
+result = double('mamuriyat')
+console.log(result); 
+result = double('tarix')
+console.log(result); 
+
 
 
 
